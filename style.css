@@ -1,0 +1,514 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    padding:0;
+    margin: 0;
+    max-width: 1920px;
+    line-height: 1.4;
+    font-family: sans-serif;
+    text-align: center;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+    font-family: "Nunito sans", sans-serif;
+}
+nav{
+    box-shadow: 2px 2px #BFBFBF;
+    padding-top: 40px;
+    color:#95A5A6;
+    margin-bottom: 20px;
+}
+nav a:hover{
+    color:black;
+}
+nav a{
+    padding: 5px 13px;
+    margin-bottom: 12px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    display: inline-block;
+}
+#headimg{
+    display: none;
+}
+#navimg{
+    margin:0;
+}
+#navimg img{
+    width: 250px;
+}
+#shoppingcart{
+    float:right;
+}
+#shoppingcart i {
+    padding-right: 50px;
+}
+#headcart{
+    display: none;
+}
+footer{
+    background-color: #dcdcdc;
+    width: 100%;
+    border-top: 2px solid #cccccc;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+footer i{
+    padding-right: 15px;
+}
+footer div{
+    width: 50%;
+}
+footer p{
+    text-align: left;
+    display: inline-block;
+}
+footer strong{
+    font-size: 1.17em;
+    font-weight: bold;
+}
+footer section{
+    margin: auto;
+    max-width: 1200px;
+}
+
+main{
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: auto;
+    min-height: 70vh;
+}
+.produkter em{
+    color: rgba(0, 0, 0, 0.6)
+}
+
+.active{
+    color:black;
+}
+.fw{
+    width: 100%;
+}
+.hw{
+    width: 50%;
+}
+.flex{
+    display: flex;
+    flex-flow: row wrap;
+}.tc{
+    text-align: center;
+}
+.pageImg{
+    width: 70%;
+}
+.infoWrapper{
+    text-align: justify;
+}
+.infoWrapper p{
+    line-height: 1.6;
+}
+.infoWrapper section{
+    flex-flow: row wrap;
+    display: flex;
+    align-items: center;
+    padding: 0 10px 10px;
+}
+.infoWrapper section strong{
+    font-size: 1.17em;
+}
+#hem{
+    width: 100%;
+    background-color: #efefef;
+}
+.col{
+    padding: 15px;
+    width: 33.33%;
+}
+.col img{
+    width: 100%;
+}
+.col img:hover{
+    filter: opacity(70%);
+}
+#kontakt{
+    padding: 20px 10px;
+}
+#kontakt, #kontakt p{
+    text-align: center;
+    background-color: #dfdfdf;
+}
+#kontakt p{
+    margin: auto;
+}
+#kontaktImg{
+    padding:0;
+}
+#kontaktImg img{
+    width: 100%;
+}
+#mail{
+    text-decoration: underline;
+    color:blue;
+}
+
+.produkter h1{
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.produkter div{
+    width: 33.33%;
+    padding: 30px 0;
+    cursor: pointer;
+    overflow:hidden;
+
+}
+.produkter img{
+    width: 300px;
+    transition: all 1s linear;
+}
+.produkter img:hover{
+    transform: scale(1.5);
+}
+
+/*Beställsidan*/
+form{
+    width: 500px;
+    margin: 0 auto;
+}
+form *{
+    float: left;
+}
+form h2{
+    width: 100%;
+}
+form div{
+    width: 50%;
+    padding:20px
+}
+form label{
+    text-align: left;
+    
+}
+form textarea{
+    height: 100px;
+    width: 190px;
+    resize: none;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    padding:10px;
+    margin: 3px 0 20px;
+}
+form input{
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    padding:10px;
+    margin: 3px 0 20px;
+}
+form button{
+    padding:10px;
+    background-color: #000;
+    color:white;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    margin: 24px 0 20px;
+    cursor: pointer;
+}
+form button:hover{
+    background-color: #666;
+}
+
+
+/*FAQ - accordion*/
+.wrapAcc{
+    width: 700px;
+    margin: 30px auto 50px;
+}
+.accordion:first-child, .accordion:last-child{
+    border:none;
+}
+.accordion{
+    background-color: #fff;
+    color: #444;
+    cursor: pointer;
+    padding: 28px 18px 24px;
+    width: 100%;
+    text-align: left;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+    border-color: #ddd;
+    outline: none;
+    transition: 0.4s;
+    font-size: 18px;
+}
+.accordion:hover:after{
+    color: #000;
+}
+.accordion:after {
+    font-family: "FontAwesome";
+    content: '\f107';
+    font-size: 17px;
+    color: #aaa;
+    float: right;
+    margin-left: 5px;
+}
+.panel p {
+    line-height: 1.7;
+}
+.accordion.active:after {
+    content: "\f106";
+}
+.panel{
+    font-family: "Nunito Sans", sans-serif;
+    text-align: left;
+    width: 100%;
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: margin, max-height  0.2s ease-out;
+}
+
+
+/*Bildspel*/
+#image{
+    display: flex;
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    /* transition:  background-image 0.2s; */
+    background: white url("Bildspel/IMG_3355.jpg") no-repeat center center;
+    background-size: cover;
+    border-top: 1px solid #aaa;
+    position: relative;
+}
+#image span{
+    font-size: 60px;
+    display: none;
+    margin: auto;
+    color: rgba(255, 255, 255, 0.8);
+}
+#left{
+    width: 20%;
+    position: absolute;
+    height: 100%;
+    top:0;
+    left:0;
+    display: flex;
+    background-color: rgba(255,255,255,0);
+}
+#right{
+    width: 20%;
+    position: absolute;
+    height: 100%;
+    top:0;
+    right:0;
+    display: flex;
+    background-color: rgba(255,255,255,0);
+}
+#left:hover, #right:hover{
+    cursor: pointer;
+    display: flex;
+    background-color: rgba(255,255,255,0.5);
+
+}
+#left:hover span, #right:hover span{
+    display: block;
+}
+#gallery{
+    margin-bottom: 80px;
+}
+#gallery h1{
+    color:white;
+    position: relative;
+    top:40%;
+    font-size: 64px;
+    text-shadow: #000000;
+    font-style: italic;
+    display: inline-block;
+}
+
+#gallery img{
+    margin: auto;
+    width: 800px;
+}
+/*Navbutton*/
+#nav_button{
+    display: none;
+
+}
+
+@media screen and (max-width: 1200px){
+    #infoWrapper{
+        margin: auto;
+        max-width: 1000px;
+    }
+}
+@media screen and (max-width: 990px){
+    .col{
+        width: 50%;
+    }
+    .wrapAcc{
+        width: 75%;
+    }
+    .produkter div{
+        width: 50%;
+    }
+    
+    #headimg{
+        display: inline-block;
+        width: 65%;
+    }
+    #headimg img{
+        min-width: 365px;
+        width: 65%;
+    }
+
+    #shoppingcart{
+        display: none;
+    }
+    #headcart{
+        display: inline-block;
+        position: relative;
+        top:-20px;
+        color:#95A5A6;
+        padding:3px 4px 3px 0px;
+    }
+    #headcart:hover{
+        background-color: #ddd;
+        cursor: pointer;
+    }
+    #navimg{
+        display: none;
+    }
+    #nav_button{
+        display: block;
+        position: absolute;
+        text-align: center;
+        color:#aaa;
+        top: 20px;
+        left: 20px;
+        margin: 10px 0 0;
+
+    }
+    #nav_button i{
+        
+        font-size: 24px;
+        padding: 3px;
+    }
+    #nav_button:hover{
+        background-color: #ddd;
+        cursor: pointer;
+    }
+    header{
+        margin-bottom: 20px;
+        width: 100%;
+        box-shadow: 2px 2px #BFBFBF;
+    }
+    header.open{
+        top:0;
+        z-index: 2;
+        width: 100%;
+        position: fixed;
+        background-color: white;
+    }
+    nav{
+        display: none;
+    }
+    nav.open{
+        z-index: 1;
+        display: block;
+        position:fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: white;
+    }
+    nav:first-of-type{
+        padding-top:100px;
+    }
+    nav a{
+        text-align: left;
+        display: block;
+        font-size: 24px;
+        padding:20px 0 20px 40px;
+
+    }
+}
+@media screen and (max-width: 670px){
+    .col{
+        width: 100%;
+    }
+    #headimg img{
+        margin-top: 15px;
+        width: 80%;
+        min-width: 230px;
+        
+    }
+    #headcart{
+        top:-13px;
+    }
+    .infoWrapper{
+        margin: auto;
+    }
+    .infoWrapper section{
+        display: flex;
+        justify-content: center;
+    }
+    .infoWrapper h1{
+        padding-top: 20px;
+        text-align: center;
+    }
+    .pageImg{
+        width: 100%;
+        padding:20px 0;
+    }
+    
+    .hw{
+        width: 100%;
+    }
+    .produkter h1{
+        text-align: center;
+    }
+    .produkter div{
+        width: 100%;
+    }
+    .wrapAcc{
+        max-width: 400px;
+    }
+    form{
+        width: 100%;
+    }
+    form *{
+        float:none;
+    }
+    form div{
+        padding: 10px ;
+        width: 100%;
+    }
+    footer div{
+        width: 100%;
+        padding-left: 60px;
+    }
+    footer p{
+        display: block;
+    }
+    .produkter img:hover{
+        transform: scale(1.2);
+    }
+    #image{
+        height: 500px;
+    }
+    #kontakt{
+        margin-top: 10px;
+        padding: 30px 10px 40px;
+    }
+    #kontaktImg img{
+        padding-top:0;
+    }
+}

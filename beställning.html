@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="utf-8">
+    <title>Beställ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="nav_button"><i id="bar" class="fa fa-bars"></i></div>
+        <a href="index.html" id="headimg"><img src="Logga.svg"></a>
+        <a id="headcart" href="beställning.html"><i class="fa fa-shopping-cart fa-2x"></i></a>
+
+    </header>
+    <nav>
+        <a href="index.html" id="navimg"><img src="Logga.svg"></a>
+        <a href="index.html">Hem</a>
+        <a href="produkter.html">Smycken</a>
+        <a href="omOss.html">Om Oss</a>
+        <a href="kontaktaOss.html">Kontakta Oss</a>
+        <a href="faq.html">FAQ</a>
+        <a id="shoppingcart" class="active" href="beställning.html"><i class="fa fa-shopping-cart fa-2x"></i></a>
+    </nav>
+    <main>
+        <form class="flex" method="GET" action="beställningfärdig.html" autocomplete="on">
+            <h2>Slutför beställning</h2>
+            <div>
+                <p>
+                    <label>E-postadress: </label><br>
+                    <input autofocus name="epost" type="email" placeholder="E-post" maxlength="100" required>
+
+                    <br><label>Mobilnummer: </label><br>
+                    <input name="tel" type="tel" placeholder="Mobilnummer" maxlength="15" required>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <label>Skriv in produktnamnet & produkttaggen.</label><br>
+                    <textarea name="produkter" required></textarea><br>
+                </p>
+            </div>
+            <h2>Leveransadress</h2>
+            <div>
+                <p>
+                    <label>Förnamn: </label><br>
+                    <input name="fname" type="text" placeholder="Förnamn" maxlength="100">
+
+                    <br><label>Efteramn: </label><br>
+                    <input name="lname" type="text" placeholder="Efternamn" maxlength="100" required>
+
+                    <br><label>Adress: </label><br>
+                    <input name="Adress" type="text" placeholder="Adress" maxlength="100" required>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <label>Postnummer: </label><br>
+                    <input name="postnr" type="number" placeholder="Postnummer" maxlength="5" required>
+                    <br><label>Ort: </label><br>
+                    <input name="Ort" type="text" placeholder="Ort" maxlength="100" required>
+                    <br><button inputmode="submit">Slutför beställning</button>
+                </p>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <section class="flex">
+            <div>
+                <p>
+                    <strong>Beautiful details</strong><br>
+                    Sjömansvägen 14
+                    <br>29132, Kristianstad
+                    <br><br>SE +73xxxxxxx
+                    <br><a href="mailto:#">mail@mail.com</a>
+                    <!--Facebook, Instagram-->
+                    <br><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official fa-2x"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+                </p>
+            </div>
+            <div>
+                <p><strong>Kundservice</strong><br>
+                    <a href="faq.html">FAQ</a>
+                    <br><a href="omOss.html">Om oss</a>
+                    <br><a href="kontaktaOss.html">Kontakta Oss</a>
+                </p>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
