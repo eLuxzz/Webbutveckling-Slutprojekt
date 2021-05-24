@@ -119,11 +119,27 @@ main{
     padding: 0 10px 10px;
 }
 .infoWrapper section strong{
-    font-size: 1.17em;
+    font-size: 1.15em;
 }
 #hem{
+    font-size: 1.13em;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 40px;
+    position: relative;
     width: 100%;
+}
+#hem::before{
     background-color: #efefef;
+    z-index: -1;
+    width: 100vw;
+    left: 50%;
+    top:0;
+    transform: translateX(-50%);
+    content: '';
+    height: 100%;
+    display: block;
+    position: absolute;
 }
 .col{
     padding: 15px;
@@ -322,7 +338,7 @@ form button:hover{
     display: block;
 }
 #gallery{
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 #gallery h1{
     color:white;

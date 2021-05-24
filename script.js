@@ -1,6 +1,6 @@
 var acc = document.getElementsByClassName("accordion");
 var navBtn = document.getElementById("nav_button");
-// var timer = setInterval(nextImage, 6000, 1);
+
 navBtn.addEventListener("click", showMenu);
 for (let i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function () {

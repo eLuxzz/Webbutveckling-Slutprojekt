@@ -5,7 +5,7 @@ var rightbtn = document.querySelector("#right");
 var imageElement = document.getElementById("image");
 var navBtn;
 var images = ["3355", "3370", "3371", "3394","3405","3409"];
-var timer = setInterval(nextImage, 6000, 1);
+// var timer = setInterval(nextImage, 6000, 1);
 
 for (let i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function () {
