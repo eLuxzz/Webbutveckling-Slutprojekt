@@ -167,11 +167,12 @@ main{
 #kontaktImg img{
     width: 100%;
 }
-#mail{
-    text-decoration: underline;
-    color:blue;
+#mail:hover{
+    color:#3eac51;
 }
-
+#mail{
+    color:#133816;
+}
 .produkter h1{
     text-align: left;
     padding-bottom: 20px;
@@ -181,16 +182,17 @@ main{
     width: 33.33%;
     padding: 30px 0;
     cursor: pointer;
-    overflow:hidden;
+    overflow: hidden;
+
+}
+.produkter img:hover{
+    filter: opacity(70%);
 
 }
 .produkter img{
     width: 300px;
-    transition: all 1s linear;
 }
-.produkter img:hover{
-    transform: scale(1.5);
-}
+
 
 /*Beställsidan*/
 form{
@@ -298,7 +300,7 @@ form button:hover{
     width: 100%;
     height: 800px;
     margin: 0 auto;
-    /* transition:  background-image 0.2s; */
+    transition:  background-image 0.3s;
     background: white url("Bildspel/IMG_3355.jpg") no-repeat center center;
     background-size: cover;
     border-top: 1px solid #aaa;
@@ -358,6 +360,24 @@ form button:hover{
 #nav_button{
     display: none;
 
+}
+
+/*Modal*/
+#modal{
+    overflow: auto;
+    display: none;
+    z-index: 3;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5)
+}
+#modal img{
+    padding:100px 0;
+    width: 500px;
+    margin:auto; 
 }
 
 @media screen and (max-width: 1200px){
@@ -436,15 +456,20 @@ form button:hover{
     }
     nav{
         display: none;
+        opacity: 0;
+        animation: animate-out-nav 0.5s linear;
     }
     nav.open{
-        z-index: 1;
         display: block;
+        opacity: 1;
+        animation: animate-in-nav 0.5s linear;
+        z-index: 1;
         position:fixed;
         height: 100vh;
         width: 100%;
         background-color: white;
     }
+    
     nav:first-of-type{
         padding-top:100px;
     }
@@ -455,8 +480,16 @@ form button:hover{
         padding:20px 0 20px 40px;
 
     }
+    
 }
 @media screen and (max-width: 670px){
+    #modal img{
+        max-width: 500px;
+        margin:0;
+        padding: 100px 10px;
+        width: 100%;
+        position: relative;
+    }
     .col{
         width: 100%;
     }
@@ -514,9 +547,7 @@ form button:hover{
     footer p{
         display: block;
     }
-    .produkter img:hover{
-        transform: scale(1.2);
-    }
+
     #image{
         height: 500px;
     }
@@ -526,5 +557,32 @@ form button:hover{
     }
     #kontaktImg img{
         padding-top:0;
+    }
+}
+@keyframes animate-in-nav{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes animate-out-nav{
+    0%{
+        display: block;
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    99%{
+        opacity: 0;
+    }
+    100%{
+        display: none;
+
     }
 }
