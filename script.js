@@ -24,6 +24,7 @@ for (let i = 0; i < openModal.length; i++) {
     openModal[i].addEventListener("click", function () {
         console.log("Ja");
         modalImg.src = this.src;
+        modalImg.alt = this.alt;
         modal.style.display = "block";
     });
 }

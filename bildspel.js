@@ -3,7 +3,7 @@ var leftbtn = document.querySelector("#left");
 var rightbtn = document.querySelector("#right");
 var imageElement = document.getElementById("image");
 var images = ["3355", "3370", "3371", "3394","3405","3409"];
-var timer = setInterval(nextImage, 6000, 1);
+var timer = setInterval(nextImage, 10000, 1);
 
 
 leftbtn.addEventListener("click", function(){
